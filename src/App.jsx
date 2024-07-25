@@ -96,9 +96,9 @@ function App() {
           </div>
 
       </div>
-      <div className="result w-[100%] lg: lg:w-[50%] h-[100%] hidden lg:flex bg-black/40 items-center justify-center ">
+      <div className="result w-[100%] lg:w-[50%] h-[100%] hidden lg:flex bg-black/40 items-center justify-center ">
         {prediction.prediction && (
-          <div className="result-body flex flex-col backdrop-blur-lg lg:backdrop-blur-none w-full items-center h-full justify-center">
+          <div className="result-body flex flex-col w-full items-center h-full justify-center">
             <h1 className='text-[50px] font-semibold'>Result </h1>
             <div className="results flex flex-col gap-3"></div>
 
@@ -122,7 +122,7 @@ function App() {
         )}
       </div>
 
-        {prediction.prediction && showResult && (
+      {prediction.prediction && showResult && (
       <div className="result w-[100%] lg: lg:w-[50%] h-[100%] lg:hidden absolute flex bg-black/40 items-center justify-center ">
           <div className="result-body flex flex-col backdrop-blur-lg lg:backdrop-blur-none w-full items-center h-full justify-center">
           <button onClick={handleClose} className="absolute bottom-10 btn btn-circle btn-outline">
